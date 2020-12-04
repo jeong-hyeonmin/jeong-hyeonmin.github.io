@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en"
-title                    : "공대생 이야기"
+title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyeonmin"
-description              : "HW/SW 개발자를 꿈꾸는 공대생입니다."
+description              : "HW/SW."
 url                      : "https://jeong-hyeonmin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jeong-hyeonmin/jeong-hyeonmin.github.io"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Hyeon min"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "HW/SW 개발자를 꿈꾸는 공대생입니다."
+  bio              : "HW/SW ."
   location         : "Seoul, korea"
   email            :
   links: 
@@ -207,7 +207,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 #
+paginate: 5 # 
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
