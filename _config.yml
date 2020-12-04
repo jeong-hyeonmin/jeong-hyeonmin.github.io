@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Hyeon min"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "HW/SW 개발자를 꿈꾸는          공대생입니다."
+  bio              : "HW/SW 개발자를 꿈꾸는 \n 공대생입니다."
   location         : "Seoul, Korea"
   email            :
   links:
@@ -128,11 +128,11 @@ footer:
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
-      icon: "minwkd97@gmail.com"
-      # url:
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jeong-hyeonmin"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      url: "https://github.com/jeong-hyeonmin"
+      #url: 
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
