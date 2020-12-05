@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Hyeon min"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "testimage.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "HW/SW 개발자를 꿈꾸는 \n 공대생입니다."
   location         : "Seoul, Korea"
   email            :
