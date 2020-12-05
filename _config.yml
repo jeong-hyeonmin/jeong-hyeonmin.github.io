@@ -24,8 +24,8 @@ description              : "HW/SW 개발자를 꿈꾸는 공대생입니다."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jeong-hyeonmin/jeong-hyeonmin.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "github/blog_blog/testimage.JPG" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "github/blog_blog/testimage2.JPG" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : "testimage.JPG" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "testimage2.JPG" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

@@ -17,5 +17,5 @@ taxonomy: project
 설계하였습니다.  
 
 
-1.[동역학해석](https://jeong-hyeonmin.github.io/projects/%ED%8F%AC%EC%8A%A4%ED%8C%85-%ED%85%8C%EC%8A%A4%ED%8A%B8/)
+1.[동역학해석](https://jeong-hyeonmin.github.io/inverted%20pendulum/Inverted-Pendulum/)
   
