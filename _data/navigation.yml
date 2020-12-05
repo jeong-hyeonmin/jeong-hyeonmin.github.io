@@ -13,8 +13,5 @@ main:
     url: /categories/projects/  
   - title: "Categories"
     url: /categories/
-  - title: "BOJ"
-    url: /categories/BOJ/    
-  - title: "etc"
-    url: /categories/etc/
+
   
