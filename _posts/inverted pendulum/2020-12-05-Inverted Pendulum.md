@@ -12,6 +12,8 @@ categories:
 어떤 시스템에 대한 제어기를 설계할때 가장 먼저 해야하는 것이 시스템에 대한 동역학 해석이라고 생각한다.
 <br>
 
+![picture1](picture1.png)
+
 <img src="picture1.png" width="450px" height="450px" title="px(픽셀) 크기 설정" alt="pendulum"></img><br/>
 위의 사진과 같이 추는 달려있지 않는 하나의 pole과 cart가 있는 시스템이다.
 <br>
