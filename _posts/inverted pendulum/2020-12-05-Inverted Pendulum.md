@@ -12,11 +12,11 @@ categories:
 어떤 시스템에 대한 제어기를 설계할때 가장 먼저 해야하는 것이 시스템에 대한 동역학 해석이라고 생각한다.
 <br>
 
-![picture1](picture1.png)
 
-<img src="picture1.png" width="450px" height="450px" title="px(픽셀) 크기 설정" alt="pendulum"></img><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979057-01a42a00-3c9d-11eb-9ee0-1ea1e60a963e.png" width = "400" ></p>
+
 위의 사진과 같이 추는 달려있지 않는 하나의 pole과 cart가 있는 시스템이다.
-<br>
+
 |기호|뜻|값|
 |-|-|-|
 |M|카트의 질량|1kg|
@@ -27,24 +27,39 @@ categories:
 |Km|모터 토크 상수|4.9 Ncm/A|
 |Kb|모터 역기전력 상수|0.0507V/rad/s|
 |R|모터 전기자 저항|$0.3 \Omega$ |
-<br>
+
 <br>
 
 카트의 운동에 대한 방정식을 구하면 다음과 같다.
 
-<img src="1-1.jpg" alt="1-1"></img><br/>
-<br>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101978083-afabd600-3c95-11eb-89cf-660a538045b7.JPG" width = "600" ></p>
+
 이때 $N$은 다음과 같다
-<img src="2.jpg" alt="1-1"></img><br/>
+
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979080-30ba9b80-3c9d-11eb-863d-9f6aac13bc9c.JPG" width = "600" ></p>
+<br>
+<br>
+
 (1)식과 (2-3) 식을 연립
-<img src="3.jpg" alt="1-1"></img><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979086-3e702100-3c9d-11eb-8bb2-912d0a573aae.JPG" width = "600" ></p>
+<br>
+<br>
+
 진자에 수직인 힘을 구하면 다음과 같다
-<img src="4.jpg" alt="1-1"></img><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979089-40d27b00-3c9d-11eb-917f-b707961d7087.JPG" width = "600" ></p>
+<br>
+<br>
+
 진자의 회전운동에 관한 식은 다음과 같다
-<img src="5.jpg" alt="1-1"></img><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979090-416b1180-3c9d-11eb-973b-9ef7f4d8b35f.JPG" width = "600" ></p>
+<br>
+<br>
+
 (5) 식을 (4) 식에 대입
-<img src="6.jpg" alt="1-1"></img><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979091-416b1180-3c9d-11eb-803e-7cafcdf7224c.JPG" width = "600" ></p>
+<br>
+<br>
 
 비선형 시스템을 진자가 수식이 되는 즉 $ \theta = \pi + \phi$ 구간에서 선형화 시킵니다.
-<img src="비선형.jpg" alt="1-1"></img><br/>
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979140-a32b7b80-3c9d-11eb-9f1f-8a908023951e.JPG" width = "300" ></p>
 
