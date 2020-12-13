@@ -38,28 +38,48 @@ categories:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979080-30ba9b80-3c9d-11eb-863d-9f6aac13bc9c.JPG" width = "600" ></p>
 <br>
-<br>
 
 (1)식과 (2-3) 식을 연립
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979086-3e702100-3c9d-11eb-8bb2-912d0a573aae.JPG" width = "600" ></p>
-<br>
 <br>
 
 진자에 수직인 힘을 구하면 다음과 같다
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979089-40d27b00-3c9d-11eb-917f-b707961d7087.JPG" width = "600" ></p>
 <br>
-<br>
 
 진자의 회전운동에 관한 식은 다음과 같다
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979090-416b1180-3c9d-11eb-973b-9ef7f4d8b35f.JPG" width = "600" ></p>
-<br>
 <br>
 
 (5) 식을 (4) 식에 대입
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979091-416b1180-3c9d-11eb-803e-7cafcdf7224c.JPG" width = "600" ></p>
 <br>
+
+비선형 시스템을 진자가 수식이 되는 즉 $ \theta = \pi + \phi$ 구간에서 선형화 시킵니다. (이 구간이 pole이 수직으로 서있을때 입니다.)
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979140-a32b7b80-3c9d-11eb-9f1f-8a908023951e.JPG" width = "300" ></p>
+
+<br>
+(3)식과 (6)식을 선형화 시키면 다음 두 식을 얻을 수 있습니다.
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/102013732-4c08d200-3d95-11eb-8e5b-04d2bc34d789.JPG" width = "600" ></p>
+
 <br>
 
-비선형 시스템을 진자가 수식이 되는 즉 $ \theta = \pi + \phi$ 구간에서 선형화 시킵니다.
-<p align="center"><img src="https://user-images.githubusercontent.com/54671691/101979140-a32b7b80-3c9d-11eb-9f1f-8a908023951e.JPG" width = "300" ></p>
+식 (3-1)에서 $F$는 모터에서 발생되는 힘이며 이때 모터에서 밸생되는 토크 $T = {K}_{m}i$이며 $F$ 에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과 같이 표현되며 이때 $r$은 모터가 한 바퀴 회전할 때 볼스크류가 이송되는 거리이다.
+
+모터에 입력되는 전압과 전류의 관계는 $V=iR+{K}_{b} \dot{\theta}$ 와 같고 이때 모터의 회전과 카트의 이동거리는 $\theta=\frac{2\pi}{r}x$ 와 같이 정리될 수 있다.
+앞의 두 식을 연립하여 정리하면 $V=iR+ \frac{2\pi{K}_{b}}{r}\dot{x}$ 와 같이 정리되고 이를 $F$에 대해 정리하면 $F=\frac{2\pi}{r}\frac{{K}_{m}}{R}(V-\frac{2\pi{K}_{b}}{r}\dot{x})$ 가 된다.
+
+<br>
+
+식 (3-1)과 연립하면 다음 식을 얻을 수 있다.
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015474-339db500-3d9f-11eb-9728-6c21757c45aa.JPG" width = "600" ></p>
+
+수식을 간단화 하기위해
+${F}_{r}=b+(\frac{2\pi}{r})^2 \frac{{K}_{m}{K}_{b}}{R}, {F}_{v}=\frac{2\pi}{r}\frac{{K}_{m}}{r}V$ 와 같이 사용한다.
+
+최종적으로 얻을 수 있는 수식은 다음과 같다.
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015756-cab73c80-3da0-11eb-98e7-9b516cd7d94f.JPG" width = "600" ></p>
+
+위와 같이 Inverted pendulum의 동역학 해석을 마쳤다.
+
 
