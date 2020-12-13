@@ -60,6 +60,7 @@ categories:
 
 <br>
 
+
 (3)식과 (6)식을 선형화 시키면 다음 두 식을 얻을 수 있습니다.
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102013732-4c08d200-3d95-11eb-8e5b-04d2bc34d789.JPG" width = "600" ></p>
 
