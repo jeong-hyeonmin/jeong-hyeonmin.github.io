@@ -75,7 +75,8 @@ $F$에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과
 $V=iR+\frac{2\pi\operatorname{K}_{b}}{r}\dot{x}$ 와 같이 정리된다.
 
 이를 $F$에 대해 정리하면 다음의 식을 얻을 수 있다.
-$F=\frac{2\pi}{r} \frac{ \operatorname{K}_{m} }{R}$
+$F=\frac{2\pi}{r} \frac{\operatorname{K}_{m}}{R}$
+$(V-\frac{2\pi\operatorname{K}_{b}}{r}\dot{x})$
 
 
 
