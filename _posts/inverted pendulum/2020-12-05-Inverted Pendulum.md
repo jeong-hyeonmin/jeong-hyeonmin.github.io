@@ -71,7 +71,9 @@ $F$에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과
 모터에 입력되는 전압과 전류의 관계는 $V=iR+\operatorname{K}_{b} \dot{\theta}$ 와 같다
 이때 모터의 회전과 카트의 이동거리는 $\theta=\frac{2\pi}{r}x$ 와 같이 정리될 수 있다.
 
-앞의 두 식을 연립하여 정리하면 $V=iR+\frac{2\pi\operatorname{K}_{b}}{r}\dot{x}$ 와 같이 정리된다.
+앞의 두 식을 연립하여 정리하면 
+$V=iR+\frac{2\pi\operatorname{K}_{b}}{r}\dot{x}$ 와 같이 정리된다.
+
 이를 $F$에 대해 정리하면 $F=\frac{2\pi}{r}\frac{\operatorname{K}_{m}}{R}(V-\frac{2\pi\operatorname{K}_{b}}{r}\dot{x})$ 가 된다.
 
 <br>
