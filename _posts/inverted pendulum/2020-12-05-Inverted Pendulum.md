@@ -63,7 +63,14 @@ categories:
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102013732-4c08d200-3d95-11eb-8e5b-04d2bc34d789.JPG" width = "600" ></p>
 
 <br>
-식 (3-1)에서 $F$는 모터에서 발생되는 힘이며 이때 모터에서 밸생되는 토크 $T = \operatorname{K}_{m}i$ 이며 $F$에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과 같이 표현되며 이때 $r$은 모터가 한 바퀴 회전할 때 볼스크류가 이송되는 거리이다.
+
+$T = \operatorname{K}_{m}i$
+
+식 (3-1)에서 $F$는 모터에서 발생되는 힘이며 이때 모터에서 밸생되는 토크 
+
+$T = \operatorname{K}_{m}i$ 
+
+이며 $F$에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과 같이 표현되며 이때 $r$은 모터가 한 바퀴 회전할 때 볼스크류가 이송되는 거리이다.
 
 
 식 (3-1)과 연립하면 다음 식을 얻을 수 있다.
