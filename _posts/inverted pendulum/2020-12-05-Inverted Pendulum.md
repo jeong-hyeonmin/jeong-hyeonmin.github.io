@@ -71,8 +71,6 @@ $T = \operatorname{K}_{m}i$이며 $F$ 에 대해서 나타내면 $F=2 \frac{\pi 
 식 (3-1)과 연립하면 다음 식을 얻을 수 있다.
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015474-339db500-3d9f-11eb-9728-6c21757c45aa.JPG" width = "600" ></p>
 
-수식을 간단화 하기위해
-${F}_{r}=b+(\frac{2\pi}{r})^2 \frac{{K}_{m}{K}_{b}}{R}, {F}_{v}=\frac{2\pi}{r}\frac{{K}_{m}}{r}V$ 와 같이 사용한다.
 
 최종적으로 얻을 수 있는 수식은 다음과 같다.
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015756-cab73c80-3da0-11eb-98e7-9b516cd7d94f.JPG" width = "600" ></p>
