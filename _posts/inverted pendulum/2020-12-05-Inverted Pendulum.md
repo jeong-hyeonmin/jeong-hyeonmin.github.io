@@ -68,5 +68,5 @@ categories:
 $T = \operatorname{K}_{m}i$이며 $F$ 에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과 같이 표현되며 이때 $r$은 모터가 한 바퀴 회전할 때 볼스크류가 이송되는 거리이다.
 
 
-모터에 입력되는 전압과 전류의 관계는 $V=iR+{K}_{b} \dot{\theta}$ 와 같고 이때 모터의 회전과 카트의 이동거리는 $\theta=\frac{2\pi}{r}x$ 와 같이 정리될 수 있다.
-앞의 두 식을 연립하여 정리하면 $V=iR+\frac{2\pi{K}_{b}}{r}\dot{x}$ 와 같이 정리되고 이를 $F$에 대해 정리하면 $F=\frac{2\pi}{r}\frac{{K}_{m}}{R}(V-\frac{2\pi{K}_{b}}{r}\dot{x})$ 가 된다.
+식 (3-1)과 연립하면 다음 식을 얻을 수 있다.
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015474-339db500-3d9f-11eb-9728-6c21757c45aa.JPG" width = "600" ></p>
