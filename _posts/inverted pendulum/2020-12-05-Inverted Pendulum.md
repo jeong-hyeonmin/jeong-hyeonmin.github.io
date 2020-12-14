@@ -66,23 +66,6 @@ categories:
 <br>
 
 
-식 (3-1)에서 $F$는 모터에서 발생되는 힘이며 이때 모터에서 밸생되는 토크 $T = {K}_{m}i$이며 $F$ 에 대해서 나타내면 $F=2 \frac{\pi T}{r} = \frac{2\pi}{r}{K}_{m}i$ 과 같이 표현되며 이때 $r$은 모터가 한 바퀴 회전할 때 볼스크류가 이송되는 거리이다.
 
-모터에 입력되는 전압과 전류의 관계는 $V=iR+{K}_{b} \dot{\theta}$ 와 같고 이때 모터의 회전과 카트의 이동거리는 $\theta=\frac{2\pi}{r}x$ 와 같이 정리될 수 있다.
-앞의 두 식을 연립하여 정리하면 $V=iR+\frac{2\pi{K}_{b}}{r}\dot{x}$ 와 같이 정리되고 이를 $F$에 대해 정리하면 $F=\frac{2\pi}{r}\frac{{K}_{m}}{R}(V-\frac{2\pi{K}_{b}}{r}\dot{x})$ 가 된다.
-
-
-<br>
-
-식 (3-1)과 연립하면 다음 식을 얻을 수 있다.
-<p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015474-339db500-3d9f-11eb-9728-6c21757c45aa.JPG" width = "600" ></p>
-
-수식을 간단화 하기위해
-${F}_{r}=b+(\frac{2\pi}{r})^2 \frac{{K}_{m}{K}_{b}}{R}, {F}_{v}=\frac{2\pi}{r}\frac{{K}_{m}}{r}V$ 와 같이 사용한다.
-
-최종적으로 얻을 수 있는 수식은 다음과 같다.
-<p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015756-cab73c80-3da0-11eb-98e7-9b516cd7d94f.JPG" width = "600" ></p>
-
-위와 같이 Inverted pendulum의 동역학 해석을 마쳤다.
 
 
