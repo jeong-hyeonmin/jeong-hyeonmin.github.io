@@ -7,7 +7,7 @@ categories:
 ---
 
 ---
-##Introduction
+## Introduction
 
 제어기를 만들게 될때 우리는 시스템을 완벽하게 알기란 쉽지 않은 일이다. 시스템이 linear한지 혹은 nonlinear한지, system order, system parameters또한 모를 수 있다.
 
@@ -15,7 +15,7 @@ categories:
 <br>
 
 ---
-##System Models
+## System Models
 
 - Static models
 정상상태에서의 거동을 모아서 확인한다.
@@ -32,7 +32,7 @@ categories:
 
 
 ---
-##Step Response Methods
+## Step Response Methods
 시스템의 전달함수의 실제 계수를 아는 경우가 많지 않다.
 Step Response Methods는 step response를 가지고 전달함수의 계수를 찾는 방법을 말한다.
 
