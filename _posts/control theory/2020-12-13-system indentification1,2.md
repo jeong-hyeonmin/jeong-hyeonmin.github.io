@@ -1,6 +1,7 @@
 ---
 title:  "system indentification 1~2"
 excerpt: "첫번째"
+use_math: true
 
 categories:
   - control theory
