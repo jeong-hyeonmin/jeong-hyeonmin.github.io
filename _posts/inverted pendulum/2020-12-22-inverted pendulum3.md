@@ -65,5 +65,31 @@ $cos\theta\ddot{x}+l\ddot{\theta}=gsin\theta$ 이며 카트를 가속시켜 진�
 $(M+m)\ddot{x}+ml\ddot{\theta}cos\theta - ml\dot{\theta}^2sin{\theta}=F-b\dot{x}$ 
 에 대입하면 다음과 같은 식을 구할 수 있다.
 
+<p align="left"><img src="https://user-images.githubusercontent.com/54671691/102844149-20997d80-444e-11eb-9ad5-1f7d51d40f6c.JPG" width = "500" ></p>
+
+여기서 $F_v , F_r$은 앞에서 구한 값들이다.
+
+$G = 1 \quad when \quad Z < 0.4$
+
+$G = 0.21 \quad when  \quad Z \ge 0.4$
+
+Z는 swing을 시작해서 현재까지의 각에 대한 cos값의 최대 값을 의미한다. 다시 말해 이 값이 0.4를 넘어서는 순간부터, 한번 이상 최상위점 근처의 특정각 이상으로 진자가 도달하게 되면 G값은 0.21가 돼서 진자를 가속하는 제어신호가 원래 신호의 21%만 적용되어 안정적으로 선형영역으로 진입하게 된다. (아래 그림 참고)
+
+<br>
 <br>
 
+
+<p align="left"><img src="https://user-images.githubusercontent.com/54671691/102844479-e11f6100-444e-11eb-9ff2-8b44ddf06809.png" width = "500" ></p>
+
+<br>
+
+---
+#### Reference
+
+- Yusuke Otani, Takuya Kurokami, Akira Inoue and Yoichi Hirashima (2001) A SWINGUP CONTROL OF AN INVERTED PENDULUM WITH CART POSITION CONTROL
+
+---
+#### series
+1.[동역학해석](https://jeong-hyeonmin.github.io/inverted%20pendulum/Inverted-Pendulum/)
+2.[Stabilizing](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum2/)
+3.[Swingup](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum3/)

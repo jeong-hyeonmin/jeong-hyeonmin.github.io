@@ -30,6 +30,7 @@ $\alpha = (M+m)(I+ml^2)-m^2l^2$
 <p align=""><img src="https://user-images.githubusercontent.com/54671691/102707067-04c19a80-42db-11eb-8c00-aeeb206cffb9.JPG" width = "180" ></p>
 
 $\dot{X}=AX+BU$
+
 $Y=CX+DU$
 와 같이 일반적인 선형 시스템의 동적 방정식을 구했다.
 

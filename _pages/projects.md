@@ -36,8 +36,10 @@ LQR제어기와 비선형 제어기를 같이 사용하여 작품을 만들었�
 ## Project 내용
 
 1.[동역학해석](https://jeong-hyeonmin.github.io/inverted%20pendulum/Inverted-Pendulum/)
+2.[Stabilizing](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum2/)
+3.[Swingup](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum3/)
 
-<br><br>
+<br>
 
 
 ## Reference
