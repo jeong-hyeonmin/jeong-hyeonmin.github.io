@@ -134,4 +134,4 @@ Q(1,1) 과 (3,3)은 각각 이동거리와 기울기에 대한 가중치이며 �
 
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102710418-760e4700-42f5-11eb-91b9-0268baa6a543.JPG" width = "500" ></p>
 
-위와 같은 제어기를 만들었고 
+위와 같은 제어기를 만들었고 simulink를 실행시켜 cart의 x축 이동, 진자의 기울기와 voltage를 확인한다.
