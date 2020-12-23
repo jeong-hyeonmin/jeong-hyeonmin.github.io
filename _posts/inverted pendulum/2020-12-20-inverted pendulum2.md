@@ -103,6 +103,7 @@ $J= \int\limits_{0}^{\infty}(X^TQX+U^TRU)dt$
 위에서 구한 상태방정식을 아래와 같은 표현으로 바꿔주기위해 A,B,C,D를 매트랩에서 표현한다.
 
 $\dot{X}=AX+BU$
+
 $Y=CX+DU$
 
 <br>
@@ -136,3 +137,11 @@ Q(1,1) 과 (3,3)은 각각 이동거리와 기울기에 대한 가중치이며 �
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102710418-760e4700-42f5-11eb-91b9-0268baa6a543.JPG" width = "500" ></p>
 
 위와 같은 제어기를 만들었고 simulink를 실행시켜 cart의 x축 이동, 진자의 기울기와 voltage를 확인한다.
+
+---
+#### series
+1.[동역학해석](https://jeong-hyeonmin.github.io/inverted%20pendulum/Inverted-Pendulum/)
+
+2.[Stabilizing](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum2/)
+
+3.[Swingup](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum3/)

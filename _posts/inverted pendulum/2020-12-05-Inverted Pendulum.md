@@ -89,3 +89,11 @@ $V=iR+\frac{2\pi\operatorname{K}_{b}}{r}\dot{x}$ 와 같이 정리된다.
 <p align="center"><img src="https://user-images.githubusercontent.com/54671691/102015756-cab73c80-3da0-11eb-98e7-9b516cd7d94f.JPG" width = "600" ></p>
 
 위와 같이 Inverted pendulum의 동역학 해석을 마쳤다.
+
+---
+#### series
+1.[동역학해석](https://jeong-hyeonmin.github.io/inverted%20pendulum/Inverted-Pendulum/)
+
+2.[Stabilizing](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum2/)
+
+3.[Swingup](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum3/)

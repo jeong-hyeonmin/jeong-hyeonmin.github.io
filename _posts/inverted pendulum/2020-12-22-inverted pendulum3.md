@@ -91,5 +91,7 @@ Z는 swing을 시작해서 현재까지의 각에 대한 cos값의 최대 값을
 ---
 #### series
 1.[동역학해석](https://jeong-hyeonmin.github.io/inverted%20pendulum/Inverted-Pendulum/)
+
 2.[Stabilizing](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum2/)
+
 3.[Swingup](https://jeong-hyeonmin.github.io/inverted%20pendulum/inverted-pendulum3/)
