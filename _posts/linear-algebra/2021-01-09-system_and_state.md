@@ -1,0 +1,159 @@
+---
+title:  "Linear algebra and linear system - System and State"
+excerpt: "학부연구생 스터디"
+use_math: true
+categories:
+  - Linear algebra and linear system
+---
+
+#### Introduce to the course
+[수업 링크](https://youtu.be/15-typuvSOs)
+
+- control : 우리가 원하는 출력을 얻기 위해서 시스템의 입력을 설계하는것
+- feed back control : 출력 신호를 입력측에 되돌림으로써 제어 입력을 만드는데 활용하는것(센서를 통해 값을 입력받는다)
+
+시스템이 예상한것과 완벽하게 동일하게 움직인다면 feed back을 받을 필요가 없지만 그렇지 않기 때문에 꼭 필요하다.
+
+<br>
+
+앞으로 배우게될 기본적인 시스템
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104089204-390ff180-52b0-11eb-81a6-a8bcefa21c6b.JPG" width = "300" ></p>
+
+system model에 대한 기본 개념을 상태변수 공간에서 학습하고 선형대수의 기초를 다시배우고, 상태공간방정식의 해, Lyapunov stability, controllability, observability, controllable and observable canonidal form, duality, 상태변수 궤환 제어기 설계, 상태변수 관측기 설계, 및 출력 궤환 제어 방법을 학습합니다.
+
+---
+
+#### System
+[수업 링크](https://youtu.be/HvIvMQwWxI4)
+
+system : 입력신호를 출력신호로 변환해 주는 대상체
+
+$u(t)$ : t라는 값이 고정되어 집어 넣은, 결과값은 상수벡터
+$u( \cdot )$ : 함수 자체를 표현
+
+
+---
+
+#### Classification of Systems
+[수업 링크](https://youtu.be/6Oex8QW796Y)
+
+- **causal system**
+
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104121529-439abb80-5382-11eb-855f-156cfb154953.JPG" width = "400" ></p>
+
+현재와 과거의 입력으로만 결정된다면 causality를 가진다.
+
+<br>
+<br>
+
+
+- **dynamic system**
+
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104121592-d6d3f100-5382-11eb-9002-762714b6290d.JPG" width = "400" ></p>
+
+출력 $y(t_0)$ 가 $t_0$ 의 앞뒤시간에 영향을 받는것
+덧셈을 하는 system은 static system
+미분 방정식으로 주어진 (ex. $\dot y = u$) 시스템은 dynamic system
+
+<p align=""><img src="https://user-images.githubusercontent.com/54671691/104121741-eef84000-5383-11eb-9a37-95b1837d75e8.jpg" width = "200" ></p>
+
+다음과 같은 회로는 $Ri(t)+ \frac{1}{c}\int\limits_{-\infty}^{t}i(\tau)d\tau = u(t)$ 와 같이 표현하고
+$\frac{1}{c}\int\limits_{-\infty}^{t}i(\tau)d\tau$ 를 $y(t)$ 라고 한다면 $\dot y = \frac{1}{c}i(t)$가 된다.
+
+$RC \dot y + y =u$ 로 표현하고 해를 구하면 $y(t) = \int\limits_{-\infty}^{t}\frac{1}{RC}(e^{- \frac{t-\tau}{RC}})u(\tau)d\tau $
+가 된다.
+미래 입력에 영향을 받지 않으므로 **causal system**이고 $u(t)$의 현재시간 t에만 영향을 받지 않으므로 **Dynamic system**이다.
+
+
+<br>
+<br>
+
+- **relaxed system**
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104122026-ee60a900-5385-11eb-92e9-ad47f5d6ea73.JPG" width = "400" ></p>
+
+$t_0$ 에서 system이 relaxed라는 것의 의미는 $t_0$이후의 출력은 온전히 $t_0$이후의 입력만으로 결정된다는 것을 의미한다.
+
+---
+
+#### State
+[수업 링크](https://youtu.be/R8kPauDzkcA)
+$y(t) = \int\limits_{-\infty}^{t_0}\frac{1}{RC}(e^{- \frac{t-\tau}{RC}})u(\tau)d\tau + \int\limits_{t_0}^{t}\frac{1}{RC}(e^{- \frac{t-\tau}{RC}})u(\tau)d\tau $
+
+$= e^{- \frac{t_0 - t}{RC}}\int\limits_{-\infty}^{t_0}\frac{1}{RC}(e^{- \frac{t-\tau}{RC}})u(\tau)d\tau + \int\limits_{t_0}^{t}\frac{1}{RC}(e^{- \frac{t-\tau}{RC}})u(\tau)d\tau $
+
+이때 앞의 항을 state라 할 수 있다.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104141445-328d9100-53fa-11eb-86ee-20e77585a653.JPG" width = "400" ></p>
+
+system의 state는 time t까지의 과거의 information을 모두 함축하고 있어서 x(t)의 state 벡터만 있다면 그 벡터와 t초이후의 입력만 가지고 미래의 출력을 완전히 결장할 수 있고 이를 state라 부른다.
+
+<br>
+
+RLC회로를 생각해 보자.
+
+<p align=""><img src="https://user-images.githubusercontent.com/54671691/104141594-f0188400-53fa-11eb-90a3-4740542fce78.jpg" width = "300" ></p>
+
+$L\frac{di}{dt} + Ri + \frac{1}{C} \int\limits_{-\infty}^{t}i(\tau)d\tau = u(t)$
+에서 $\frac{1}{C} \int\limits_{-\infty}^{t}i(\tau)d\tau = y(t)$ 로 생각해본다면
+$LC\ddot{y} + RC\dot{y} + y = u$가되며 $x_1(t) = y(t), x_2(t)=\dot{y}(t)$
+
+$\dot{x_1}=x_2, \dot{x_2}=-\frac{RC}{LC}x_2 - \frac{x_1}{LC}+\frac{u}{LC}$
+
+상태공간에 표현하면
+
+$
+\begin{bmatrix}
+\dot{x_1} \\
+\dot{x_2}
+\end{bmatrix} = \begin{bmatrix}
+0 & 1 \\
+-\frac{1}{RC} & -\frac{R}{L}
+\end{bmatrix}\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix} + \begin{bmatrix}
+0 \\
+\frac{1}{LC}
+\end{bmatrix} u
+ $
+
+상태변수를 $i_L(t)+v_c(t), i_L(t)-v_c(t)$ 와같이 잡아도 된다. 수학적으로는 어떤 model을 표현하는 state가 될 수 있지만 전류와 전압을 더하는 물리량은 의미있는 물리량은아니다.
+
+state는 유일하지 않지만 system의 최소한의 state의 개수는 유일하며 시스템의 차수와 동일하다.
+
+---
+
+#### Linear State Space Systems
+[수업 링크](https://youtu.be/Dt02sjGKxQw)
+
+
+- **Linear state space system**
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104143722-0414b380-5404-11eb-87db-7071726c6a50.JPG" width = "400" ></p>
+
+주의할 점은 homogeneity를 만족하기 위해서는 초기값에도 배수가 곱해져야한다는 점이다.
+
+zero-state Response : 초기값이 0일때 나오는 출력
+$\{ u[t_0,\infin), 0 \} \rarr y^{ZS}[t_0, \infin) $
+
+zero-input Response : 입력이 0일때 나오는 출력
+$\{ 0, x(t_0) \} \rarr y^{ZS}[t_0, \infin) $
+
+zero-state Response 와 zero-input Response를 더하면
+$\{ u[t_0,\infin), x(t_0) \} \rarr y[t_0, \infin) $
+
+선형시스템의 특징 : 선형시스템의 출력은 zero-state Response와 zero-input Response로 나눌 수 있다.
+
+---
+#### Time invariance
+[수업 링크](https://youtu.be/Qr8dM7WVRQs)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/104144194-9d909500-5405-11eb-9974-24d923e6ed7a.JPG" width = "400" ></p>
+
+시불변시스템은 입력이 T만큼 shift되면 출력또한 T만큼 shift되어 같은 출력을 보이는 것을 말한다.
+
+
+여러시스템을 살펴보았고 간단한 예제를 보자.
+$y(t) = \int\limits_{t-1}^{t}\tau^2u(\tau)d\tau$
+
+Linear system이고 과거만 영향을 미치므로 causal system이며
+time-variance system이고 과거의 입력도 사용하기 때문에 dynamic system이다.
