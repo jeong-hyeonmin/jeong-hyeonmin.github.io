@@ -1,7 +1,7 @@
 ---
 title:  "차량동역학 포스팅 시작!"
 excerpt: "학부연구생 스터디"
-
+use_math: true
 categories:
   - 차량동역학
 ---
