@@ -20,7 +20,7 @@ title                    : "공대생 이야기"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyeonmin"
-description              : "HW/SW 개발자를 꿈꾸는 \n 공대생입니다."
+description              : "제어에 관심이 많은 공대생입니다."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jeong-hyeonmin/jeong-hyeonmin.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
