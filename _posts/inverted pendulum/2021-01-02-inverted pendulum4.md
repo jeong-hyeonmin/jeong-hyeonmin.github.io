@@ -8,8 +8,11 @@ categories:
 
 작동영상
 
-{% include youtube.html id="1nwZxXOE67A" %}  
+{%include youtube.html id="1nwZxXOE67A"%}  
 
+
+{%include youtube.html id="cl0qxyTxbeE&t=2935s&ab_channel=Ripples리펄즈
+"%}  
 
 
 
