@@ -6,6 +6,13 @@ categories:
   - Inverted Pendulum
 ---
 
+작동영상
+
+{% include youtube.html id="1nwZxXOE67A&ab_channel=정현민" %}  
+
+
+=1nwZxXOE67A&ab_channel=정현민
+
 ## Hardware
 
 ---
