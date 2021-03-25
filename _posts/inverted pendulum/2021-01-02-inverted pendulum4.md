@@ -7,11 +7,9 @@ categories:
 ---
 
 작동영상
+(임시)
+https://www.youtube.com/watch?v=1nwZxXOE67A&ab_channel=%EC%A0%95%ED%98%84%EB%AF%BC
 
-{%include youtube.html id="1nwZxXOE67A"%}  
-
-
-{% include youtube.html id="cl0qxyTxbeE&t=2935s&ab_channel=Ripples리펄즈 "%}  
 
 
 
