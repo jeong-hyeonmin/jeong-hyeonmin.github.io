@@ -61,6 +61,13 @@ Capstone design에서 사용했던 퍼지제어기를 간단하게 설명해 보
 Fuzzifier는 Crisp한 수치적 정보를 퍼지 집합으로 변화시키는 연산입니다. 방안의 온도가 높으면 에어컨을 세게틀어라 에서 온도를 30도 와 같이 수치로 주어집니다. 이 수치를 퍼지 입력으로 바꾸는 것이 Fuzzifier입니다.
 
 
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/123607221-a270c600-d838-11eb-92b4-c0090447dc05.png" width = "500" ></p>
+
+ex) Temperature = 78, Warm,Hot의 적합도는 각각 0.7,0.27임을 알 수 있습니다.
+
+<br>
+<br>
+
 **비퍼지화기**
 
 Defuzzifier는 Fuzzifier의 반대기능을 합니다. 퍼지 제어기에서 퍼지 추론부의 출력(퍼지 집합으로 표현됨)으로 부터 수치 데이터(Crisp number data)를 얻어내는 장치입니다.
@@ -111,4 +118,34 @@ $y^*=sup\{y\in m_{max}(B')\}$
 
 <br>
 
-''
+'mean of maxima defuzzifier'는 $m_{max}(B')$의 평균값을 취하는 방법이다.
+
+$y^* = \frac{\int_{m_{max}(B')}y dy}{\int_{m_{max}(B')dy}}$
+
+최대치법은 계산량이 적어 유리하지만, 출력값의 연속성을 보장하지 못하는 결점이 있다.
+
+<br>
+<br>
+
+**퍼지추론**
+
+퍼지화를 통해 소속값으로 결과를 추론하는 과정, 퍼지 규칙을 통해 퍼지입 력으로 퍼지 결과를 추론하게됨
+이때 Rule Base를 사용하게 되는데
+
+- NB : Negative Big
+- NM : Negative Medium
+- NS : Negative Small
+- ZO : Zero
+- PS : Positive Small
+- PM : Positive Medium
+- PB : Positive Big
+을 의미
+
+<p align="center"><img src="https://user-images.githubusercontent.com/54671691/123608178-7f92e180-d839-11eb-90fe-b781f98d521f.png" width = "500" ></p>
+
+
+
+## 3. 적용
+
+캡스톤에서는 옴니휠 모바일 로봇의 위치제어를 위해 사용하였습니다.
+로봇을 특정 위치로 이동시키기 위해서 카메라를 통해 특정 위치와 현재 로봇의 오차값을 $x,y,\theta$ 값으로 가져와서 Fuzzy control의 input값으로 사용하였습니다.
